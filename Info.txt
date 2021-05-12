@@ -1,0 +1,14 @@
+TODO AGARRADO CON HILOS
+
+luna + estrellas + nubes
+
+scroll -> nubes de abajo se van para los costados
+
+transición de colores hacia el atardecer
+
+scroll -> quedan dos nubes en el medio, de las cuales salen los hilos de los árboles y el sol
+
+(aparecen de abajo? bajan con la página? de los costados?)
+
+queda el sol en el centro del footer, con dos árboles a los costados, y algunas pipis.
+
