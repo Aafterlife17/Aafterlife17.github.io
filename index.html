@@ -49,7 +49,7 @@
 
     <ul class="nav-links">
         <li>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
         </li>
         
         <li>
@@ -86,44 +86,32 @@
     <article>
         <!--SECCIÓN 1: CARROUSEL-->
         <section>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="images/carousel/home-1.jpg" height="100%" width="100%" class="d-block w-100" alt="Imagen 1">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Cliente X - Obra del 20XX </h5>
-                          <p>Breve descripción de la obra</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/carousel/home-2.jpg" height="100%" width="100%" class="d-block w-100" alt="Imagen 2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Cliente X - Obra del 20XX </h5>
-                            <p>Breve descripción de la obra</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/carousel/home-3.jpg" height="100%" width="100%" class="d-block w-100" alt="Imagen 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Cliente X - Obra del 20XX </h5>
-                            <p>Breve descripción de la obra</p>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Siguiente</span>
-                    </button>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/Proyecto/images/carousel/home/home-1.jpg" class="d-block  w-100" alt="Home 1">
                   </div>
+                  <div class="carousel-item">
+                    <img src="/Proyecto/images/carousel/home/home-2.jpg" class="d-block w-100" alt="Home 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/Proyecto/images/carousel/home/home-3.jpg" class="d-block w-100" alt="Home 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
         </section>
 
         <!--SECCIÓN 2: DESCRIPCIÓN-->
@@ -138,48 +126,37 @@
             <h2>Clientes</h2>
             <div id="clientes" class="container">
 
-                    <img src="images/clientes/contract.png" width="200" height="100" alt="Logo Contract">
 
-                    <img src="images/clientes/intro.png" alt="Logo Intro">
+                    <img id="logo-contract" src="images/clientes/contract.png" width="204" height="117" alt="Logo Contract">
 
-                    <img src="images/clientes/mp.png" alt="Logo MP">
+                    <img id="logo-intro" src="images/clientes/intro.png" width="91" height="165" alt="Logo Intro">
 
-                    <img src="images/clientes/town-house.png" alt="Logo Town House">
+                    <img id="logo-mp" src="images/clientes/mp.png" width="165" height="164" alt="Logo MP">
+
+                    <img id="logo-th" src="images/clientes/town-house.png" width="300" height="117" alt="Logo Town House">
 
             </div>
         </section>
 
         <!--SECCIÓN 4: PROVEEDORES-->
-            <div id="titulo-proveedores">
-            <h2>Proveedores</h2>
-            <h3>Conozca nuestra cartera de proveedores</h3>
-            </div>
+            
         <section id="seccionProveedores">
-            
+            <div id="titulo-proveedores">
+                <h2>Proveedores</h2>
+                <h3>Conozca nuestra cartera de proveedores</h3>
+            </div>
             <div id="proveedores" class="container">
-                
-                <div class="col5">
                     <img src="images/proveedores/sanitarios-global.png" alt="Logo Sanitarios Global">
-                </div>
-                <div class="col6">
-                    <img src="images/proveedores/konkor.png" alt="Logo Konkor">
-                </div>
-                <div class="col7">
-                    <img src="images/proveedores/vagol.png" alt="Logo Vagol">
-                </div>
-                <div class="col8">
-                    <img src="images/proveedores/REX.png" alt="Logo Rex">
-                </div>
-                <div class="col9">
-                    <img src="images/proveedores/cutuli2.jpg" alt="Logo Cutuli">
-                </div>
+
+                    <img id="logo-konkor" src="images/proveedores/konkor.png" alt="Logo Konkor">
+
+                    <img id="logo-vagol" src="images/proveedores/vagol.png" alt="Logo Vagol">
                 
-                <div class="col10">
-                    <img src="images/proveedores/pime.png" alt="Logo Pime">
-                </div>
+                    <img id="logo-rex" src="images/proveedores/REX.png" alt="Logo Rex">
+
+                    <img id="logo-cutuli" src="images/proveedores/cutuli2.jpg" alt="Logo Cutuli">
                 
-            
-                
+                    <img id="logo-pime" src="images/proveedores/pime.png" alt="Logo Pime">
             </div>
         </section>
     </article>

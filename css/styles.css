@@ -110,7 +110,7 @@ nav .logo{
     text-decoration-color: #6CBE72;
 }
 
-.nav-links .active {
+.nav-links a:active {
     text-decoration-color: #6CBE72;
 }
 
@@ -127,54 +127,12 @@ nav .logo{
     transition: all 0.3s ease;
 }
 
-
-
-/* #navbar {
-    background-color: #EAEAEA;
-    width: 100%;
-    height: 130px;
-}
-
-#navbar-header {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-}
-
-#main-nav {
-    display: flex;
-    list-style: none;
-}
-
-#main-nav{
-    width: 345px;
-    height: auto;
-}
-
-#logo{
-   padding-top: 5px;
-}
-
-#main-nav li a {
-    color: #343434;
-    text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-color: #F18D4F;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 2px;
-    padding: 50px 1em;
-    display: flex;
-}
-
-#main-nav li a:hover {
-    text-decoration-color: #6CBE72;
-}
-
-#main-nav .active {
-    text-decoration-color: #6CBE72;
-} */
-
 /*(HOME) SECCIÓN 2: DESCRIPCIÓN*/
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 55px;
+    height: 55px;
+}
 
 #descripcion{
     display: flex;
@@ -185,7 +143,7 @@ nav .logo{
 #descripcion p {
     line-height: 2rem;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5vw;
     
 }
 
@@ -204,12 +162,14 @@ nav .logo{
 }
 
 
+
 #clientes{
     display: flex;
     padding-top: 1em;
     justify-content: space-evenly;
     padding-bottom: 4em;
     max-width: 80%;
+    height: auto;
     align-items: center;
   
 }
@@ -347,12 +307,8 @@ nav .logo{
     margin: 2px;
 }
 
-#mapa{
-    justify-content: left;
-    align-items: left;
-
-
-
+.mapa{
+    width: 95%;
 }
 
 
@@ -447,13 +403,84 @@ footer li a{
 
 /* MEDIA QUERIES */
 
-@media  screen and (max-width: 1500px){
+/*1632px - TABLET 1*/
+
+@media  screen and (max-width: 1632px){
     .nav-links{
         width: 30%;
     }
 
+    #clientes{
+        width: 80%;
+    }
+
+    #proveedores {
+        width: 100%;
+    }
+
+    #titulo-contacto h2 {
+        padding-top: 3em;
+        padding-bottom: 1em;
+        font-size: 1.7em;
+    }
+
+    #contacto-mapa #contacto .container{
+        margin-right: 4em;
+    }
+
+    .mapa{
+        padding-top: 5em;
+        width: 100%
+    }
+
 }
 
+/*1250px - TABLET 2*/
+
+@media  screen and (max-width: 1250px){
+    .nav-links{
+        width: 45%;
+    }
+
+    #clientes {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #proveedores {
+        padding-left: 30px;
+        width: 80%;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .carousel-indicators button {
+        width: 35px;
+        height: 35px;
+    }
+
+    #descripcion p {
+        font-size: 1.9vw;
+        
+    }
+
+}
+
+/*1000px - TABLET 3*/
+
+@media  screen and (max-width: 1000px){
+    #descripcion p {
+        font-size: 2.2vw;
+    }
+
+}
+
+
+/*768px - MOBILE*/
 
 @media  screen and (max-width: 768px){
 
@@ -495,6 +522,20 @@ footer li a{
         padding-right: 25px;
     }
 
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #descripcion p {
+        font-size: 2.5vw;
+    }
+
+
+    #clientes {
+       
+        
+    }
     
 
 }
@@ -525,3 +566,50 @@ footer li a{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -5px);
 }
+
+/*671px - MOBILE (FOOTER)*/
+
+@media  screen and (max-width: 671px){
+
+    footer li{
+        text-align: center;
+    }
+
+    #footer {
+        display: block;
+    }
+
+    #logo-footer{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-left: 40px;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    #descripcion p {
+        font-size: 2.9vw;
+    }
+   
+    
+
+}
+
+
+/*500px - MOBILE*/
+
+@media  screen and (max-width: 500px){
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    #descripcion p {
+        font-size: 3.5vw;
+    }
+}
+
