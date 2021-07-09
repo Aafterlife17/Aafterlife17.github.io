@@ -536,6 +536,22 @@ footer li a{
        
         
     }
+
+    footer li{
+        text-align: center;
+    }
+
+    #footer {
+        display: block;
+    }
+
+    #logo-footer{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-left: 40px;
+    }
+    
+
     
 
 }
