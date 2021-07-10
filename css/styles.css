@@ -376,9 +376,19 @@ footer li a{
         font-size: 1.7em;
     }
 
-    /* #contacto-mapa #contacto .container{
+    .carousel-inner  img {
+        position: inherit;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 100%;
+
+
+    }
+
+    #contacto-mapa #contacto .container{
         margin-right: 4em;
-    } */
+    }
 
     .mapa{
         padding-top: 5em;
@@ -407,10 +417,10 @@ footer li a{
         width: 80%;
     }
 
-    /* .carousel-control-prev-icon, .carousel-control-next-icon {
+    .carousel-control-prev-icon, .carousel-control-next-icon {
         width: 35px;
         height: 35px;
-    } */
+    }
 
 
 
@@ -471,11 +481,11 @@ footer li a{
         padding-right: 25px;
     }
 
-    /* .carousel-control-prev-icon, .carousel-control-next-icon {
+    .carousel-control-prev-icon, .carousel-control-next-icon {
         width: 30px;
         height: 30px;
     }
-     */
+    
     #descripcion p {
         font-size: 2.5vw;
     }
@@ -547,10 +557,10 @@ footer li a{
         padding-left: 40px;
     }
 
-    /* .carousel-control-prev-icon, .carousel-control-next-icon {
+    .carousel-control-prev-icon, .carousel-control-next-icon {
         width: 25px;
         height: 25px;
-    } */
+    }
 
     #descripcion p {
         font-size: 2.9vw;
@@ -566,10 +576,10 @@ footer li a{
 @media  screen and (max-width: 500px){
 
 
-    /* .carousel-control-prev-icon, .carousel-control-next-icon {
+    .carousel-control-prev-icon, .carousel-control-next-icon {
         width: 25px;
         height: 25px;
-    } */
+    }
 
     #descripcion p {
         font-size: 3.5vw;
