@@ -407,9 +407,6 @@ footer li a{
 
 @media  screen and (max-width: 1632px){
 
-    html, body{
-        overflow-x: hidden;
-    }
 
     .nav-links{
         width: 30%;
@@ -444,9 +441,6 @@ footer li a{
 
 @media  screen and (max-width: 1250px){
 
-    html, body{
-        overflow-x: hidden;
-    }
 
     .nav-links{
         width: 45%;
@@ -480,9 +474,6 @@ footer li a{
 /*1000px - TABLET 3*/
 
 @media  screen and (max-width: 1000px){
-    html, body{
-        overflow-x: hidden;
-    }
 
     #descripcion p {
         font-size: 2.2vw;
@@ -494,10 +485,6 @@ footer li a{
 /*768px - MOBILE*/
 
 @media  screen and (max-width: 768px){
-
-    html,body{
-        overflow-x: hidden;
-    }
 
 
     .nav-links{
@@ -595,9 +582,6 @@ footer li a{
 /*671px - MOBILE (FOOTER)*/
 
 @media  screen and (max-width: 671px){
-    html, body{
-        overflow-x: hidden;
-    }
 
     footer li{
         text-align: center;
@@ -630,9 +614,7 @@ footer li a{
 /*500px - MOBILE*/
 
 @media  screen and (max-width: 500px){
-    html, body{
-        overflow-x: hidden;
-    }
+
 
     .carousel-control-prev-icon, .carousel-control-next-icon {
         width: 25px;
