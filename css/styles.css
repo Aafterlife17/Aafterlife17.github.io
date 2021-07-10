@@ -409,7 +409,6 @@ footer li a{
 
     html, body{
         overflow-x: hidden;
-        position: fixed;
     }
 
     .nav-links{
@@ -447,7 +446,6 @@ footer li a{
 
     html, body{
         overflow-x: hidden;
-        position: fixed;
     }
 
     .nav-links{
@@ -484,7 +482,6 @@ footer li a{
 @media  screen and (max-width: 1000px){
     html, body{
         overflow-x: hidden;
-        position: fixed;
     }
 
     #descripcion p {
@@ -500,7 +497,6 @@ footer li a{
 
     html,body{
         overflow-x: hidden;
-        position: fixed;
     }
 
 
@@ -601,7 +597,6 @@ footer li a{
 @media  screen and (max-width: 671px){
     html, body{
         overflow-x: hidden;
-        position: fixed;
     }
 
     footer li{
@@ -637,7 +632,6 @@ footer li a{
 @media  screen and (max-width: 500px){
     html, body{
         overflow-x: hidden;
-        position: fixed;
     }
 
     .carousel-control-prev-icon, .carousel-control-next-icon {
