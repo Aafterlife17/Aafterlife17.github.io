@@ -2,6 +2,7 @@
 html, body{
     height: 100%;
     max-width: 1920px;
+    overflow-x: hidden;
 }
 
 body {
@@ -347,7 +348,7 @@ footer li a{
     text-align: center;
     font-weight: 600;
     border-top: 1px solid #D9D9D9;
-    padding: 12px 0px;
+    padding: 50px 0px;
     font-size: 0.95rem;
 }
 
@@ -363,11 +364,11 @@ footer li a{
     }
 
     #clientes{
-        width: 80%;
+        flex-flow: row wrap;
     }
 
     #proveedores {
-        width: 100%;
+        flex-flow: row wrap;
     }
 
     #titulo-contacto h2 {
@@ -387,7 +388,7 @@ footer li a{
     }
 
     #contacto-mapa #contacto .container{
-        margin-right: 4em;
+        margin-right: 60px;
     }
 
     .mapa{
@@ -429,6 +430,18 @@ footer li a{
         
     }
 
+    #contacto-mapa #contacto {
+        margin-left: 60px;
+        margin-right: 60px;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .h3, h3 {
+        font-size: 2.5vw;
+    }
+
 }
 
 /*1000px - TABLET 3*/
@@ -437,6 +450,18 @@ footer li a{
 
     #descripcion p {
         font-size: 2.2vw;
+    }
+
+    #contacto-mapa #contacto {
+        margin-left: 60px;
+        margin-right: 60px;
+        padding-left: 50px;
+        flex-flow: row wrap;
+        font-size: 15px;
+    }
+
+    .h3, h3 {
+        font-size: 2.7vw;
     }
 
 }
@@ -509,6 +534,25 @@ footer li a{
         opacity: 0;
     } */
 
+    #contacto-mapa #contacto {
+        margin-left: 25px;
+        margin-right: 25px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .h3, h3 {
+        font-size: 2.5vw;
+    }
+
+    #contacto-mapa #contacto i{
+        min-width: 60px;
+
+        font-size: 30px;
+
+    }
+
 
 }
 
@@ -565,6 +609,10 @@ footer li a{
     #descripcion p {
         font-size: 2.9vw;
     }
+
+    .h3, h3 {
+        font-size: 18px;
+    }
    
     
 
@@ -584,5 +632,7 @@ footer li a{
     #descripcion p {
         font-size: 3.5vw;
     }
+
+    
 }
 
