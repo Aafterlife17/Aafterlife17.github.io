@@ -717,16 +717,12 @@ footer li a{
         justify-content: center;
     }
 
- 
-
-
     #contacto-mapa #contacto i{
         min-width: 60px;
 
         font-size: 30px;
 
     }
-
 
 }
 
@@ -837,4 +833,33 @@ footer li a{
         opacity: 0;
     }
     
+    div#town-house  {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#town-house h2 {
+        margin-left: 10px;
+    }
+
+    div#mercado-libre {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#mercado-libre h2 {
+        margin-left: 10px;
+    }
+
+    div#contract {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#contract h2 {
+        margin-left: 10px;
+    }
 }
