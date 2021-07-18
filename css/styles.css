@@ -496,11 +496,6 @@ footer li a{
         flex-flow: row wrap;
     }
 
-    #titulo-contacto h2 {
-        padding-top: 3em;
-        padding-bottom: 1em;
-        font-size: 1.7em;
-    }
 
     .carousel-inner  img {
         position: inherit;
@@ -516,16 +511,26 @@ footer li a{
         font-size: 25px;
     }
 
-
-
-    #contacto-mapa #contacto .container{
-        margin-right: 60px;
+    section#contacto-mapa{
+        display: flex;
+        justify-content: space-between;
     }
 
-    .mapa{
-        padding-top: 5em;
-        width: 100%
+    #contacto-mapa #contacto {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 0;
+        justify-content: center;
+        align-items: left;
+
     }
+
+    .h3, h3{
+        font-size: 27px;
+    }
+
+   
+
 
 }
 
@@ -549,29 +554,33 @@ footer li a{
         height: 35px;
     }
 
-    #descripcion p {
-        font-size: 1.9vw;
-        
-    }
-
     .carousel-indicators {
         opacity: 0;
     }
 
-    #contacto-mapa #contacto {
-        margin-left: 60px;
-        margin-right: 60px;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        font-size: 15px;
+    section#contacto-mapa{
+        flex-flow: column;
+        align-items: center;
+        column-count: auto;
+        justify-content: space-between;
     }
 
-    .h3, h3 {
-        font-size: 2.5vw;
+    div#mapa  {
+        padding: 30px 0 0 38px;
+        margin: 0px;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h3, h3{
+        font-size: 27px;
+    }
+
+    #descripcion p {
+        font-size: 20px;
+        justify-content: left;
+        align-items: left;
     }
 
 }
@@ -580,25 +589,8 @@ footer li a{
 
 @media  screen and (max-width: 1000px){
 
-    #descripcion p {
-        font-size: 2.2vw;
-    }
-
-
-
-    #contacto-mapa #contacto {
-        margin-left: 60px;
-        margin-right: 60px;
-        padding-left: 50px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: row wrap;
-                flex-flow: row wrap;
-        font-size: 15px;
-    }
-
-    .h3, h3 {
-        font-size: 2.7vw;
+    .h3, h3{
+        font-size: 25px;
     }
 
 }
@@ -612,7 +604,7 @@ footer li a{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 29vh;
+        height: 30vh;
         width: 50%;
         top: 11vh;
         background-color: #EAEAEA;
@@ -662,9 +654,6 @@ footer li a{
         height: 30px;
     }
     
-    #descripcion p {
-        font-size: 2.5vw;
-    }
 
 
     footer li{
@@ -686,16 +675,13 @@ footer li a{
     }
 
     #contacto-mapa #contacto {
-        margin-left: 25px;
-        margin-right: 25px;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
 
     }
+
+   
 
 
     div#titulo-proveedores h3 {
@@ -717,11 +703,61 @@ footer li a{
         justify-content: center;
     }
 
-    #contacto-mapa #contacto i{
-        min-width: 60px;
 
-        font-size: 30px;
 
+    div#town-house.container  {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#town-house h2 {
+        margin: 0;
+        max-width: 100%;
+        font-size: 22px;
+    }
+
+    div#town-house img {
+        max-width: 50%;
+    }
+
+    div#mercado-libre.container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div#mercado-libre h2 {
+        margin-left: 10px;
+        padding-top: 15px;
+        font-size: 22px;
+    }
+
+    div#mercado-libre img {
+        max-width: 50%;
+    }
+
+    div#contract.container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div#contract h2 {
+        margin-left: 10px;
+        padding-top: 15px;
+        font-size: 22px;
+    }
+
+    div#contract img {
+        max-width: 50%;
+    }
+
+    div#nekza.container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h3, h3{
+        font-size: 23px;
     }
 
 }
@@ -799,18 +835,15 @@ footer li a{
         height: 25px;
     }
 
-    #descripcion p {
-        font-size: 2.9vw;
-    }
 
-    .h3, h3 {
-        font-size: 18px;
-    }
    
     .carousel-indicators {
         opacity: 0;
     }
-    
+
+    div#mapa {
+        padding: 30px 0 0 20px;
+    }
 
 }
 
@@ -825,41 +858,15 @@ footer li a{
         height: 25px;
     }
 
-    #descripcion p {
-        font-size: 3.5vw;
-    }
 
     .carousel-indicators {
         opacity: 0;
     }
+
+    #descripcion p {
+        font-size: 18px;
+
+    }
     
-    div#town-house  {
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    div#town-house h2 {
-        margin-left: 10px;
-    }
-
-    div#mercado-libre {
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    div#mercado-libre h2 {
-        margin-left: 10px;
-    }
-
-    div#contract {
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    div#contract h2 {
-        margin-left: 10px;
-    }
+    
 }
