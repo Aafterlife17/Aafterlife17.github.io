@@ -959,3 +959,12 @@ footer li a{
     }
     
 }
+
+@media  screen and (max-width: 450px){
+
+
+    .h3, h3 {
+        font-size: 18px;
+    }
+    
+}
