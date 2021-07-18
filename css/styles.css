@@ -199,7 +199,8 @@ nav .logo{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: row wrap;
+    -ms-flex-wrap: row wrap;
+        flex-wrap: row wrap;
     padding-top: 1em;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -237,7 +238,8 @@ nav .logo{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: row wrap;
+    -ms-flex-wrap: row wrap;
+        flex-wrap: row wrap;
     padding-top: 1em;
     padding-bottom: 4em;
     -webkit-box-pack: space-evenly;
@@ -251,7 +253,10 @@ nav .logo{
 
 #proveedores img{
     padding: 10px;
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
 }
 
 /*(OBRAS) SECCIÓN 1: CONTRACT*/
@@ -464,36 +469,58 @@ footer li a{
     #clientes{
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        flex-flow: column;
-        align-items: center;
-        column-count: auto;
+        -ms-flex-flow: column;
+            flex-flow: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-column-count: auto;
+           -moz-column-count: auto;
+                column-count: auto;
     }
     
     #clientes img{
         margin: 20px;
-        flex-flow: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
     }
 
     div#clientes {
-        flex-flow: row wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
     }
 
 
     #proveedores {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-                flex-flow: column;
-        align-items: center;
-        column-count: auto;
+                -ms-flex-flow: column;
+            flex-flow: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-column-count: auto;
+           -moz-column-count: auto;
+                column-count: auto;
     }
 
     #proveedores img{
         padding: 20px;
-        flex-flow: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
     }
 
     div#proveedores {
-        flex-flow: row wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
     }
 
 
@@ -512,16 +539,24 @@ footer li a{
     }
 
     section#contacto-mapa{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     #contacto-mapa #contacto {
         margin-left: 25px;
         margin-right: 25px;
         margin-top: 0;
-        justify-content: center;
-        align-items: left;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: left;
+            -ms-flex-align: left;
+                align-items: left;
 
     }
 
@@ -559,18 +594,31 @@ footer li a{
     }
 
     section#contacto-mapa{
-        flex-flow: column;
-        align-items: center;
-        column-count: auto;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-column-count: auto;
+           -moz-column-count: auto;
+                column-count: auto;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     div#mapa  {
         padding: 30px 0 0 38px;
         margin: 0px;
         width: 95%;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .h3, h3{
@@ -579,8 +627,12 @@ footer li a{
 
     #descripcion p {
         font-size: 20px;
-        justify-content: left;
-        align-items: left;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
+        -webkit-box-align: left;
+            -ms-flex-align: left;
+                align-items: left;
     }
 
 }
@@ -675,8 +727,12 @@ footer li a{
     }
 
     #contacto-mapa #contacto {
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         font-size: 15px;
 
     }
@@ -698,17 +754,31 @@ footer li a{
     }
 
     div#town-house  {
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
 
 
     div#town-house.container  {
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     div#town-house h2 {
@@ -722,8 +792,12 @@ footer li a{
     }
 
     div#mercado-libre.container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     div#mercado-libre h2 {
@@ -737,8 +811,12 @@ footer li a{
     }
 
     div#contract.container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     div#contract h2 {
@@ -752,8 +830,12 @@ footer li a{
     }
 
     div#nekza.container {
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .h3, h3{
@@ -872,6 +954,8 @@ footer li a{
         font-size: 20px;
     }
 
-    
+    .h3, h3 {
+        font-size: 20px;
+    }
     
 }
