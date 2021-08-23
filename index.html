@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="css/styles.css">
@@ -340,7 +340,7 @@
                                 </div>    
 
                                 <div>
-                                    <h3 class="qualification__title">Web Developer - UI Interface Designer</h3>
+                                    <h3 class="qualification__title">Web Developer | UI Interface Designer</h3>
                                     <span class="qualification__subtitle">Educación IT</span>
                                     <div class="qualification__calendar">
                                         <i class="far fa-calendar"></i>
@@ -372,7 +372,7 @@
                             <div class="qualification__data">
 
                                 <div>
-                                    <h3 class="qualification__title">Web Developer</h3>
+                                    <h3 class="qualification__title">Web Developer | Community Manager</h3>
                                     <span class="qualification__subtitle">Freelance</span>
                                     <div class="qualification__calendar">
                                         <i class="far fa-calendar"></i>
@@ -570,26 +570,143 @@
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Trabajos recientes</span>
 
-            </section>
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper"> 
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio1.png" alt="" class="portfolio__img">
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Web Page</h3>
+                                <p class="portfolio__description">Web con diseño minimalista creada para SCP Construcciones S.R.L., quienes buscaban expresar sus trabajos de manera simple y elegante.</p>
+                                <a href="https://scpconstrucciones.com.ar/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Ver Sitio
+                                    <i class="fas fa-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
 
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio2.png" alt="" class="portfolio__img">
 
-            </section>
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Parallax</h3>
+                                <p class="portfolio__description">Proyecto creado para explorar las herramientas de CSS y JS que le dan vida a un Parallax, diseñado para convertirse en un blog o portfolio. </p>
+                                <a href="https://aafterlife17.github.io/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Ver Sitio
+                                    <i class="fas fa-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio3.png" alt="" class="portfolio__img">
 
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">WordPress</h3>
+                                <p class="portfolio__description">Mantenimiento y modificaciones en la página de Flora Fotografía, un cliente que eligió la plataforma de WordPress para exponer sus trabajos.</p>
+                                <a href="http://florafotografia.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Ver Sitio
+                                    <i class="fas fa-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 4 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio4.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Community Management</h3>
+                                <p class="portfolio__description">Manejo de redes y creación de contenido para Ermindo Santa Cruz, una marca de indumentaria en constante crecimiento.</p>
+                                <a href="https://www.instagram.com/ermindosantacruz/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Ver Sitio
+                                    <i class="fas fa-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="fas fa-angle-right swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-angle-left swiper-portfolio-icon"></i>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
             </section>
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
+                <h2 class="section__title">Contacto</h2>
+                <span class="section__subtitle"></span>
 
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="fas fa-phone-alt contact__icon"></i>
 
+                            <div>
+                                <h3 class="contact__title">Teléfono</h3>
+                                <span class="contact__subtitle">+54 9 11 6365-4880</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="fas fa-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">natalia.malvicino@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="fas fa-map-marker-alt contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Localidad</h3>
+                                <span class="contact__subtitle">Retiro, C.A.B.A.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Nombre</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Título</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Mensaje</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Enviar Mensaje
+                                <i class="fas fa-comment-dots button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
 
@@ -603,7 +720,7 @@
         
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="js/script.js"></script>
