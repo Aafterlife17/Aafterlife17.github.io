@@ -1,174 +1,611 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>SCP Construcciones S.R.L.</title>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!--ESTILOS-->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!--FUENTES-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
-
-    <!--GOOGLE WEB ICON / SCROLL TO TOP-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!--FONT AWESOME-->
-    <script src="https://kit.fontawesome.com/8c6a7c605a.js" crossorigin="anonymous"></script>
-
-    <!--FAVICON-->
-    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-
-</head>
-<body>
-
-<!--BOTÓN SCROLL TO TOP-->
-    <button id="scrollToTop" onclick="scrollToTop()">
-        <id class="material-icons">arrow_upward</id>
-    </button>
-<!--HEADER-->
-<nav>
-    <div class="logo">
-        <a href="index.html"><img src="images/logo-header.png" alt="SCP Construcciones S.R.L."></a>
-    </div>
-
-    <ul class="nav-links">
-        <li>
-            <a href="index.html" class="active">Home</a>
-        </li>
+        <!--==================== FONT AWESOME ====================-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         
-        <li>
-            <a href="obras.html">Obras</a>
-        </li>
-        <li>
-            <a href="contacto.html">Contacto</a>
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="css/styles.css">
 
-        </li>
-    </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</nav>
- 
-<!--CUERPO-->
-<main>
-    <article>
-        <!--SECCIÓN 1: CARROUSEL-->
-        <section>
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/carousel/home/home-1.jpg" class="d-block w-100" alt="Home 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/carousel/home/home-2.jpg" class="d-block w-100" alt="Home 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/carousel/home/home-3.jpg" class="d-block w-100" alt="Home 3">
-                  </div>
+        <title>Natalia Malvicino | Portfolio </title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">NM</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="fas fa-home nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="fas fa-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#edu" class="nav__link">
+                                <i class="fas fa-graduation-cap nav__icon"></i> Formación
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="fas fa-code nav__icon"></i> Servicios
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="fas fa-briefcase nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="fas fa-envelope nav__icon"></i> Contacto
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="fas fa-times nav__close" id="nav-close"></i>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
-        </section>
 
-        <!--SECCIÓN 2: DESCRIPCIÓN-->
-        <section>
-            <div id="descripcion" class="container">
-                <p>En SCP Construcciones desde hace más de quince años nos dedicamos a la realización de obras arquitectónicas de gran importancia en el sector público y privado. Trabajamos junto a clientes líderes en sus actividades y a su vez contamos con una amplia variedad de los mejores proveedores. </p>
-            </div>
-        </section>
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-        <!--SECCIÓN 3: CLIENTES-->
-        <section id="seccionClientes">
-            <h2>Clientes</h2>
-            <div id="clientes" class="container">
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/nataliamalvicino/" target="_blank" class="home__social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="https://dribbble.com/Aafterlife17" target="_blank" class="home__social-icon">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+
+                            <a href="https://github.com/Aafterlife17" target="_blank" class="home__social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x='-2' y='-15' href="img/home.jpg"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hola! Soy Natalia.</h1>
+                            <h3 class="home__subtitle">Frontend Developer</h3>
+                            <p class="home__description">Desarrollo de páginas web | Diseño Gráfico <br>| Community Management</p>
+                            <a href="#contact" class="button button--flex">
+                                Contáctame
+                                <i class="fas fa-envelope button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="fas fa-mouse home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll</span>
+                            <i class="fas fa-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">Sobre mí</h2>
+                <span class="section__subtitle">Introducción</span>
+                
+                <div class="about__container container grid">
+                    <img src="img/about.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">Web Developer con amplio conocimiento en diseño funcional y responsive de páginas web. UX/UI, Diseño Gráfico, Community Management.  </p>
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">1+</span>
+                                <span class="about__info-name">Años de <br> experiencia</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">11+</span>
+                                <span class="about__info-name">Cursos <br> completados</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="pdf/cv-natalia-malvicino-2021.pdf" class="button button--flex">
+                            Descargar CV 
+                            <i class="fas fa-download button__icon"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">Conocimientos y Herramientas</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="fas fa-code skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Frontend Developer</h1>
+                                    <span class="skills__subtitle">1+ años de experiencia</span>
+                                </div>
+
+                                <i class="fas fa-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML5</h3>
+                                        <span class="skills__number">Avanzado | 90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS3</h3>
+                                        <span class="skills__number">Avanzado | 80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__number">Intermedio | 65%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">WordPress</h3>
+                                        <span class="skills__number">Intermedio | 50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__wordpress"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Angular</h3>
+                                        <span class="skills__number">Básico | 35%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__angular"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="fas fa-palette skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Diseño Gráfico</h1>
+                                    <span class="skills__subtitle">5+ años de experiencia</span>
+                                </div>
+
+                                <i class="fas fa-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe Photoshop</h3>
+                                        <span class="skills__number">Avanzado | 80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__photoshop"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe Illustrator</h3>
+                                        <span class="skills__number">Avanzado | 80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__illustrator"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe XD</h3>
+                                        <span class="skills__number">Intermedio | 70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__xd"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Figma</h3>
+                                        <span class="skills__number">Intermedio | 70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__figma"></span>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="edu">
+                <h2 class="section__title">Formación</h2>
+                <span class="section__subtitle">Aptitudes y experiencia </span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="fas fa-graduation-cap qualification__icon"></i>
+                            Educación
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="fas fa-briefcase qualification__icon"></i>
+                            Trabajo
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Ingeniería en Sistemas</h3>
+                                    <span class="qualification__subtitle">Universidad de Buenos Aires</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar"></i>
+                                        2021 - En Curso
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>    
+
+                                <div>
+                                    <h3 class="qualification__title">Web Developer - UI Interface Designer</h3>
+                                    <span class="qualification__subtitle">Educación IT</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar"></i>
+                                        2018 - 2020
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Bachiller en Humanidades y Cs. Sociales</h3>
+                                    <span class="qualification__subtitle">Instituto Carlos Steeb</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar"></i>
+                                        2008 - 2012
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">Web Developer</h3>
+                                    <span class="qualification__subtitle">Freelance</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar"></i>
+                                        2020 - En Curso
+                                    </div>
+                                </div> 
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                            </div>
+
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Diseñadora Gráfica | Community Manager</h3>
+                                    <span class="qualification__subtitle">Tekno Homes S.A.</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar"></i>
+                                        2017 - 2018
+                                    </div>
+                                </div>
+                            </div>
+                                   
+                            <!--==================== QUALIFICATION 4 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Diseñadora Gráfica</h3>
+                                    <span class="qualification__subtitle">Punto & Papel</span>
+                                    <div class="qualification__calendar">
+                                        <i class="far fa-calendar"></i>
+                                        2016 - 2017
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Servicios</h2>
+                <span class="section__subtitle"></span>
+
+                <div class="services__container container grid">
+                    <!--==================== SERVICE 1 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="fas fa-code services__icon"></i>
+                            <h3 class="services__title">Web Page <br> (HTML5/CSS/JS)</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            Ver más
+                            <i class="fas fa-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Web Page (HTML5/CSS/JS)</h4>
+                                <i class="fas fa-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="far fa-check-circle services__modal-icon"></i>
+                                        <p>Desarrollo de páginas web únicas y funcionales. </p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="far fa-check-circle services__modal-icon"></i>
+                                        <p>Personalizdas y adaptables a todo tipo de dispositivo.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="far fa-check-circle services__modal-icon"></i>
+                                        <p>Trabajo constante junto al cliente para reflejar su visión.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICE 2 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="fab fa-wordpress services__icon"></i>
+                            <h3 class="services__title">Web Page <br> (WordPress)</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            Ver más
+                            <i class="fas fa-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Web Page (WordPress)</h4>
+                                <i class="fas fa-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="far fa-check-circle services__modal-icon"></i>
+                                        <p>Desarrollo tu página utilizando el mejor Gestor de Contenido del mercado.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="far fa-check-circle services__modal-icon"></i>
+                                        <p>Ideal para crear y administrar tu tienda online de manera segura.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="far fa-check-circle services__modal-icon"></i>
+                                        <p>Mantenimiento y actualizaciones mensuales.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICE 3 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="fas fa-palette services__icon"></i>
+                            <h3 class="services__title">Diseño <br> Gráfico</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            Ver más
+                            <i class="fas fa-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Diseño Gráfico</h4>
+                                <i class="fas fa-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="far fa-check-circle services__modal-icon"></i>
+                                        <p>Diseño de logos y tarjetería para tu marca.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="far fa-check-circle services__modal-icon"></i>
+                                        <p>Mockups de páginas web utilizando las mejores herramientas de diseño.</p>
+                                    </li>  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICE 4 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="fas fa-share-alt services__icon"></i>
+                            <h3 class="services__title">Community <br> Manager</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            Ver más
+                            <i class="fas fa-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Community Manager</h4>
+                                <i class="fas fa-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="far fa-check-circle services__modal-icon"></i>
+                                        <p>Gestión de las redes sociales de tu marca.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="far fa-check-circle services__modal-icon"></i>
+                                        <p>Desarrollo de contenido atractivo y creativo.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                
+
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
 
 
-                    <img id="logo-contract" src="images/clientes/contract.png" width="204" height="117" alt="Logo Contract">
+            </section>
 
-                    <img id="logo-intro" src="images/clientes/nekza.png" width="215" height="40" alt="Logo Nekza">
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                
 
-                    <img id="logo-mp" src="images/clientes/mp.png" width="165" height="164" alt="Logo MP">
+            </section>
 
-                    <img id="logo-th" src="images/clientes/town-house.png" width="300" height="117" alt="Logo Town House">
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
 
-            </div>
-        </section>
 
-        <!--SECCIÓN 4: PROVEEDORES-->
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+
             
-        <section id="seccionProveedores">
-            <div id="titulo-proveedores">
-                <h2>Proveedores</h2>
-                <h3>Conozca nuestra cartera de proveedores</h3>
-            </div>
-            <div id="proveedores" class="container">
-                    <img src="images/proveedores/sanitarios-global.png" alt="Logo Sanitarios Global">
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        
 
-                    <img id="logo-konkor" src="images/proveedores/konkor.png" alt="Logo Konkor">
+        <!--==================== SWIPER JS ====================-->
+        <script src=""></script>
 
-                    <img id="logo-vagol" src="images/proveedores/vagol.png" alt="Logo Vagol">
-                    
-                    <img id="logo-urquiza" src="images/proveedores/urquiza.jpg" alt="Logo Urquiza">
-                
-                    <img id="logo-rex" src="images/proveedores/REX.png" alt="Logo Rex">
-
-                    <img id="logo-cutuli" src="images/proveedores/cutuli2.jpg" alt="Logo Cutuli">
-                
-                    <img id="logo-pime" src="images/proveedores/pime.png" alt="Logo Pime">
-            </div>
-        </section>
-    </article>
-</main>
-
-<!--FOOTER-->
-<footer>
-    <div id="footer" class="container">
-        <div id="logo-footer">
-            <a href="index.html"><img src="images/logo-header.png"  alt="SCP Construcciones"></a>
-        </div>
-
-        <div id="info">
-            <ul>
-                <li>1148390865 / 1148390757</li>
-                <li><a href="mailto:francopaduano@gmail.com">francopaduano@gmail.com</a></li>
-                <li>Marcelo Torcuato de Alvear 2577</li>
-                <li>Villa Maipú (1650) San Martín, Provincia de Buenos Aires</li>
-            </ul>
-        </div>
-    </div>
-    <div id="copyright">
-        &copy SCP Construcciones S.R.L | Derechos Reservados.
-    </div>
-</footer>
-
-<!--SCRIPT BOOTSTRAP-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-<!--SCRIPT PÁGINA-->
-<script type="text/javascript" src="javascript/script.js"> </script>
-</body>
+        <!--==================== MAIN JS ====================-->
+        <script src="js/script.js"></script>
+    </body>
 </html>
