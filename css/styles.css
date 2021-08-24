@@ -488,7 +488,7 @@ img{
 }
 
 .skills__wordpress{
-    width: 50%;
+    width: 60%;
 }
 
 .skills__angular{
@@ -799,7 +799,7 @@ img{
 }
 
 .contact__input{
-    widows: 100%;
+    width: 100%;
     background-color: var(--input-color);
     color: var(--text-color);
     font-family: var(--body-font);
