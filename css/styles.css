@@ -737,6 +737,10 @@ img{
 
 
 /*==================== PORTFOLIO ====================*/
+section#portfolio.portfolio.section{
+    padding: 3rem 0 4rem;
+}
+
 .portfolio__container{
     overflow: initial;
 }
@@ -797,6 +801,10 @@ img{
 }
 
 /*==================== CONTACT ME ====================*/
+section#contact.contact.section{
+    padding: 5rem 0 4rem;
+}
+
 .contact__container{
     row-gap: 3rem;
 }
