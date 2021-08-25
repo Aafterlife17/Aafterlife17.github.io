@@ -660,7 +660,7 @@ img{
 }
 
 .services__title{
-    font-size: var(--h3-font-size);
+    font-size: 1rem;
     margin-bottom: var(--mb-1);
     font-weight: var(--font-medium);
 }
