@@ -366,7 +366,7 @@ img{
 }
 
 .button:hover{
-    background-color: var(--title-color);
+    background-color: var(--first-color-alt);
 }
 
 .button__icon{
