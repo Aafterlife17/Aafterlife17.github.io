@@ -1318,7 +1318,7 @@ section#contact.contact.section{
     }
 
     .services__container.container.grid{
-        margin-left: 36rem;
+        justify-content: center;    
     }
 
     .services__container{
