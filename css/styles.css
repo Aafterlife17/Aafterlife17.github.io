@@ -1317,13 +1317,12 @@ section#contact.contact.section{
         justify-content: center;
     }
 
-    .services__container.container.grid{
-        justify-content: center;    
-    }
+     .services__container.container.grid{
+        transform: translateX(15rem);
+    } 
 
     .services__container{
         grid-template-columns: repeat(4, 225px);
-        justify-content: center;
     }
 
     .services__title{
