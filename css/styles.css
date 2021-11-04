@@ -672,7 +672,7 @@ button.button.button--flex{
 .services__container{
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+    
 }
 
 .services__content{
@@ -721,7 +721,7 @@ button.button.button--flex{
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
-    z-index: var(--z-modal);
+    z-index: 10;
     opacity: 0;
     visibility: hidden;
     transition: .3s;
@@ -1317,12 +1317,13 @@ section#contact.contact.section{
         justify-content: center;
     }
 
-     .services__container.container.grid{
-        transform: translateX(15rem);
-    } 
+    .services__container.container.grid{
+        margin-left: 36rem;
+    }
 
     .services__container{
         grid-template-columns: repeat(4, 225px);
+        justify-content: center;
     }
 
     .services__title{
