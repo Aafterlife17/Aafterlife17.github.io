@@ -6,7 +6,7 @@
     --header-height: 3rem;
 
     /*========== Colores ==========*/
-    --hue-color: 15; 
+    --hue-color: 365; 
 
     /* HSL */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -1113,7 +1113,7 @@ section#contact.contact.section{
         column-gap: 2rem;
     }
 
-    .home__blob{
+    .home__blob-img{
         width: 270px;
     }
 
