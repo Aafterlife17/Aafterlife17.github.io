@@ -198,7 +198,7 @@ img{
 
 .nav__logo{
     margin-top: .75rem;
-    width: 47px;
+    width: 35px;
 }
 
 .nav__toggle{
@@ -777,11 +777,26 @@ section#portfolio.portfolio.section{
 }
 
 .portfolio__container{
-    overflow: initial;
+    gap: 5rem;
+    grid-template-columns: repeat(1, 1fr);
+        
 }
 
 .portfolio__content{
-    padding: 0 2.5rem;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    transition: .3s;
+}
+
+.portfolio__content:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
+
+.portfolio__data{
+    margin-bottom: var(--mb-1-5);
 }
 
 .portfolio__img{
@@ -799,41 +814,15 @@ section#portfolio.portfolio.section{
     margin-bottom: var(--mb-0-75);
 }
 
+.portfolio__btn{
+    justify-self: center;
+}
+
 .portfolio__button:hover .button__icon{
     transform: translateX(.25rem);
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after{
-    content: '';
-}
 
-.swiper-portfolio-icon{
-    font-size: 2rem;
-    color: var(--first-color);
-}
-
-.swiper-button-prev{
-    left: -.5rem;
-}
-
-.swiper-button-next{
-    right: -.5rem;
-}
-
-.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
-    bottom: -2rem;
-}
-
-.swiper-pagination-bullet-active{
-    background-color: var(--first-color);
-}
-
-.swiper-button-prev,
-.swiper-button-next,
-.swiper.pagination.bullet{
-    outline: none;
-}
 
 /*==================== CONTACTAME ====================*/
 section#contact.contact.section{
@@ -1304,7 +1293,7 @@ section#contact.contact.section{
 
     .skills__container.container.grid,
     .qualification__container.container,
-    .portfolio__container.container.swiper-container,
+    .portfolio__container.container.grid,
     .contact__container.container.grid{
         transform: translateX(15rem);
     }
@@ -1332,25 +1321,34 @@ section#contact.contact.section{
         padding-top: 8rem;
     }
 
-    .portfolio__img{
-        width: 350px;
+    .portfolio__container{
+        gap: 25px;
+        grid-template-columns: repeat(3, 350px);
+        justify-content: center;
     }
 
     .portfolio__content{
-        align-items: center;
-        column-gap: 5rem;
+        display: inline-block;
+        position: relative;
+        justify-self: center;
     }
 
-    .swiper-portfolio-icon{
-        font-size: 2.7rem;
-    }
-    
-    .swiper-button-next{
-        right: -6rem;
+    .portfolio__data{
+        margin-top: var(--mb-1);
+        margin-bottom: 4rem;
     }
 
-    .swiper-button-prev{
-        left: -6rem;
+    .portfolio__img{
+        width: 300px;
+    }
+
+    .portfolio__img.arvako{
+        width: 350px;
+    }
+
+    .portfolio__btn{
+        position: absolute;
+        bottom: 15px;
     }
 
     section#contact.contact.section{

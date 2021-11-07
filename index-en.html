@@ -14,7 +14,13 @@
         <link rel="stylesheet" href="css/styles.css">
 
         <!--==================== FAVICON ====================-->
-        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
 
         <title>Natalia Malvicino | Portfolio </title>
     </head>
@@ -582,16 +588,18 @@
                 <h2 class="section__title">Portfolio</h2>
                 <span class="section__subtitle">Recent projects</span>
 
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper"> 
+                <div class="portfolio__container container grid">
                         <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="img/portfolio1.png" alt="" class="portfolio__img">
+                        <div class="portfolio__content grid">
+                            <img src="img/portfolio1.png" alt="" class="portfolio__img arvako">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Web Page</h3>
                                 <p class="portfolio__description">Coming Soon - Under Construction!</p>
-                                <a href="https://arvako.com.ar/" target="_blank" class="button button--flex button--small portfolio__button">
+                                
+                            </div>
+                            <div class="portfolio__btn">
+                                <a href="https://arvako.com.ar/" target="_blank" class="button button--flex button--small portfolio__button arvako">
                                     See Website
                                     <i class="fas fa-arrow-right button__icon"></i>
                                 </a>
@@ -599,12 +607,15 @@
                         </div>
 
                         <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
+                        <div class="portfolio__content grid">
                             <img src="img/portfolio2.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Web Page</h3>
                                 <p class="portfolio__description">Website development for SCP Construcciones S.R.L., who wanted to show their work in an elegant and minimalist way.</p>
+                                
+                            </div>
+                            <div class="portfolio__btn">
                                 <a href="https://scpconstrucciones.com.ar" target="_blank" class="button button--flex button--small portfolio__button">
                                     See Website
                                     <i class="fas fa-arrow-right button__icon"></i>
@@ -613,13 +624,16 @@
                         </div>
 
                         <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="img/portfolio3.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__content grid">
+                            <img src="img/portfolio3.jpg" alt="" class="portfolio__img mockup">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Mockup - Adobe XD</h3>
                                 <p class="portfolio__description">Mockup for a client. First steps before starting to work on the website's design.</p>
-                                <a href="img/portfolio3.jpg" target="_blank" class="button button--flex button--small portfolio__button">
+                            </div>
+
+                            <div class="portfolio__btn">
+                                <a href="img/portfolio3.jpg" target="_blank" class="button button--flex button--small portfolio__button mockup">
                                     See Design
                                     <i class="fas fa-arrow-right button__icon"></i>
                                 </a>
@@ -627,26 +641,34 @@
                         </div>
 
                         <!--==================== PORTFOLIO 4 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
+                        <div class="portfolio__content grid">
                             <img src="img/portfolio4.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Parallax</h3>
                                 <p class="portfolio__description">Designed to become a portfolio or personal blog, this site was built usign CSS and JS to create a Parallax. </p>
+                                
+                            </div>
+
+                            <div class="portfolio__btn">
                                 <a href="parallax/parallax.html" target="_blank" class="button button--flex button--small portfolio__button">
-                                    See Website
-                                    <i class="fas fa-arrow-right button__icon"></i>
+                                See Website
+                                <i class="fas fa-arrow-right button__icon"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!--==================== PORTFOLIO 5 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
+                        <div class="portfolio__content grid">
                             <img src="img/portfolio5.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">WordPress</h3>
                                 <p class="portfolio__description">Mainteinance and modifications on Flora Fotografía's website, a client that chose WordPress to exhibit their work.</p>
+                                
+                            </div>
+
+                            <div class="portfolio__btn">
                                 <a href="http://florafotografia.com/" target="_blank" class="button button--flex button--small portfolio__button">
                                     See Website
                                     <i class="fas fa-arrow-right button__icon"></i>
@@ -655,28 +677,23 @@
                         </div>
 
                         <!--==================== PORTFOLIO 6 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
+                        <div class="portfolio__content grid">
                             <img src="img/portfolio6.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Community Management</h3>
                                 <p class="portfolio__description">Content creator for Ermindo Santa Cruz, a brand in constant expansion.</p>
+                                
+                            </div>
+
+                            <div class="portfolio__btn">
                                 <a href="https://www.instagram.com/ermindosantacruz/" target="_blank" class="button button--flex button--small portfolio__button">
                                     See Website
                                     <i class="fas fa-arrow-right button__icon"></i>
                                 </a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="swiper-button-next">
-                        <i class="fas fa-angle-right swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="fas fa-angle-left swiper-portfolio-icon"></i>
-                    </div>
-
-                    <div class="swiper-pagination"></div>
+                
 
                 </div>
             </section>
