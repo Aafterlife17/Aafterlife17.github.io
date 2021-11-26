@@ -708,6 +708,7 @@ section#portfolio.portfolio.section{
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
+    height: 45%;
 }
 
 .portfolio__title{
