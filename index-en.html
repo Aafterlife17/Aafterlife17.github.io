@@ -4,676 +4,403 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--==================== FONT AWESOME ====================-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <!--==================== FONTAWESOME ====================-->
+        <script src="https://kit.fontawesome.com/8c6a7c605a.js" crossorigin="anonymous"></script>
         
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <!--================= FAVICON =====================-->
+        
+        
+        <!--==================== GOOGLE FONTS ====================-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
         
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="/css/styles.css">
 
-        <!--==================== FAVICON ====================-->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="img/favicon/site.webmanifest">
-        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-
-        <title>Natalia Malvicino | Portfolio </title>
+        <title>Arvako S.R.L.</title>
     </head>
+
+
     <body>
         <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <div >
-                    <a href="#home"><img src="img/logo2.png" alt="Logo" class="nav__logo"></a>
-                </div>
+        <header class="myHeader" id="header">
+            <div class="header flex "> 
+                <a href="#home"><img src="img/logo3.png" class="logo" alt="Logo" ></a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="fas fa-home nav__icon"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#sobremi" class="nav__link">
-                                <i class="fas fa-user nav__icon"></i> About me
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="fas fa-file-alt nav__icon"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#edu" class="nav__link">
-                                <i class="fas fa-graduation-cap nav__icon"></i> Qualifications
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="fas fa-briefcase nav__icon"></i> Portfolio
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="fas fa-envelope nav__icon"></i> Contact me
-                            </a>
-                        </li>
+                <nav class="nav__menu">
+                    <ul class="nav__links">
+                        <li><a href="#home" class="active-link">Home</a></li>
+                        <li><a href="#institucional">About us</a></li>
+                        <li><a href="#nuestras-maquinas">Our Products</a></li>
+                        <li><a href="#empaques">Packaging</a></li>
+                        <li><a href="#contacto">Contact Us</a></li>
                     </ul>
-                    <i class="fas fa-times nav__close" id="nav-close"></i>
-                </div>
 
-                <div>
-                    <a href="index.html"><img src="img/es-flag.png" alt="Spanish Flag" class="flag__logo"></a>
+                </nav>
+                
+                <a href="index.html"><img src="img/es-flag.png" alt="Cambiar Idioma" class="es-flag"></a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-
-                <div class="nav__btns">
-                    <!--Botón para cambiar tema-->
-                    <i class="fas fa-moon change-theme" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </div>
-                </div>
-            </nav>
+            </div>
         </header>
 
         <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/nataliamalvicino/" target="_blank" class="home__social-icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
+        <main>
+            <!--==================== SECTION 1: PRINCIPAL ====================-->
+            <section class="principal" id="home">
+                <div class="principal__titles">
+                      
+                    <h1>Conozca nuestra <br> Filosofía de Trabajo.</h1>
+                    <h3>La garantía ARVAKO,<br> nuestra capacidad puesta<br> a prueba.</h3>
 
-                            <a href="https://dribbble.com/Aafterlife17" target="_blank" class="home__social-icon">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-
-                            <a href="https://github.com/Aafterlife17" target="_blank" class="home__social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
+                    <div class="botones">
+                        <div >
+                            <a href="#contacto" class="boton__1">Contáctenos</a>
                         </div>
 
-                        <div class="home__img">
-                            <img src="img/pic.png" alt="Front" class="home__blob-img">
-                        </div>
-
-                        <div class="home__data">
-                            <h1 class="home__title">Natalia Malvicino</h1>
-                            <h3 class="home__subtitle">Web/Graphic Designer</h3>
-                            <!-- <p class="home__description">Web/Graphic Designer | UX-UI</p> -->
-                            <a href="#contact" class="button button--flex">
-                                ¡Let's get in touch!
-                                <i class="fas fa-envelope button__icon"></i>
-                            </a>
+                        <div >
+                            <a href="#institucional" class="boton__2">Leer más</a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="fas fa-mouse home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll</span>
-                            <i class="fas fa-arrow-down home__scroll-arrow"></i>
-                        </a>
+                <div class="principal__img">
+                    <!-- <img src="img/confeccionadora.png" alt="Confeccionadora" > -->
+                </div>
+
+                <!-- <div class="principal__fondo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1917.414" height="849" viewBox="0 0 1917.414 849">
+                        <path id="Trazado_14" data-name="Trazado 14" d="M2184.49,835.76H267.076v-849h912L2184.49,698.044Z" transform="translate(-267.076 13.24)" fill="#e9e9e9"/>
+                    </svg>
+                </div> -->
+            </section>
+
+            <!--==================== SECTION 2: INSTITUCIONAL ====================-->
+
+            <section class="institucional__section" id="institucional">
+                <div class="institucional" >
+                    <div class="institucional__img">
+                        <img src="img/institucional__img.png" alt="Logo 2">
+                    </div>
+
+                    <div class="institucional__texto">
+                        <h2>Nuestra Empresa</h2>
+                        <p>En la fabricación de las máquinas envasadoras automáticas ARVAKO seguimos un proceso altamente tecnificado. Nuestro experimentado equipo humano sabe evaluar correctamente cada pedido, para que el resultado del mismo responda a la confianza que los clientes han depositado en nuestra compañía, y para ello contamos con todos los medios técnicos necesarios.</p>
+                        <p>El riguroso control al que sometemos cada pieza que fabricamos es una de nuestras mejores armas de trabajo, a la hora de respaldar la imagen y calidad de nuestras máquinas, que siempre llevan el sello ARVAKO. 
+                        </p>
                     </div>
                 </div>
             </section>
 
-            <!--==================== SOBRE MÍ ====================-->
-            
-                <section class="about section" id="sobremi" >
-                    <h2 class="section__title">About me</h2>
-                    <span class="section__subtitle">Introduction</span>
+
+            <!--==================== SECTION 3: NUESTRAS MÁQUINAS ==================-->
+
+            <!--==================== CONFECCIONADORAS DE BOLSA ==================-->
+            <section class="nuestras__maquinas" id="nuestras-maquinas">
+                <div class="nm__titulo">
+                    <h2>Nuestras Máquinas</h2>
+                    <span>Encuentre el mejor equipo para su necesidad.</span>
+                </div>
+                
+                <div class="nm__titulo2">
+                    <h2>Confeccionadoras de bolsa</h2>
+                    <span>Horizontales y Verticales.</span>
+                </div>
+
+                <div class="nm__contenido">
+                    <div class="nm__img-confecc">
+                        <img src="img/nm__confeccionadora.png" alt="Confeccionadora">
+                    </div>
+
+                    <div class="nm__texto-confecc">
+                        <h3>Productos que envasan nuestras máquinas:</h3>
+                        <p>Azúcar, yerba, galletitas, mayonesa, aceitunas, legumbres, café, pastas frescas y secas, caramelos, especias, flan, frutas secas, harinas, jugos de fruta, maníes, panes, snacks, postres, rebozador, sopas, alimento balanceado, agua destilada, tornillos, tuercas, rollos de cinta aisladora, repuestos escolares, repuestos automotores u otros.</p>
+                        <p>Si su producto no se encuentra dentro de los mencionados, consúltenos. Es posible que dispongamos de la máquina adecuada para su envasado.</p>
                     
-                    <div class="about__container container grid">
-                        <img src="img/nm6.jpeg" alt="" class="about__img">
-    
-                        <div class="about__data">
-                            <p class="about__description">I consider myself a creative, determined and organized person, searching for new challenges and to broaden my knowledge. I have more than three year's experience working as a Graphic Designer and Web Designer, currently studying to become a Frontend Developer.</p>
-    
-                            <div class="about__info">
-                                <div>
-                                    <span class="about__info-title">3+</span>
-                                    <span class="about__info-name">Years of <br> experience</span>
+
+                    <!--==================== EMPAQUES ==================-->
+                        <div class="nm__envases-cont">
+                            <h3>Formatos de envase:</h3>
+
+                            <div class="nm__envases">
+                                <div class="nm__almohada">
+                                    <img src="img/almohada.png" alt="Almohada">
+                                    <span>Almohada</span>
                                 </div>
-    
-                                <div>
-                                    <span class="about__info-title">11+</span>
-                                    <span class="about__info-name">Completed <br> courses</span>
+                                <div class="nm__costuras">
+                                    <img src="img/fondoplano.png" alt="Costuras">
+                                    <span>Fondo <br>Plano</span>
+                                </div>
+                                <div class="nm__doypack">
+                                    <img src="img/doypack.png" alt="Doypack">
+                                    <span>Doypack</span>
+                                </div>
+                                <div class="nm__fytplana">
+                                    <img src="img/fondoytapaplana.png" alt="Fondo Tapa Plana">
+                                    <span>Fondo y<br> Tapa plana</span>
                                 </div>
                             </div>
-    
-                            <div class="about__buttons">
-                                <div class="about__button1">
-                                    <a download="" href="pdf/CV-Natalia-Malvicino-EN-2022.pdf" class="button button--flex">
-                                    Download CV 
-                                    <i class="fas fa-download button__icon"></i>
-                                </a>
-                                </div>
-    
-                                <div class="about__button2">
-                                    <a download="" href="pdf/Certificaciones-Natalia-Malvicino.pdf" class="button button--flex">
-                                    Download certificates 
-                                    <i class="fas fa-download button__icon"></i>
-                                </a>
-                                </div>
-                            </div>    
                         </div>
                     </div>
-                </section>
+                </div>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">Tools and Knowledge</span>
+                <!-- <div class="linea__divisiora"></div> -->
 
-                <div class="skills__container container grid">
-                    <div>
-                        <!--==================== SKILLS 1 ====================-->
-                        <div class="skills__content skills__open">
-                            <div class="skills__header">
-                                <i class="fas fa-code skills__icon"></i>
+                <!--==================== DOSIFICADORES ==================-->
+            
+                <div class="nm__titulo3">
+                    <h2>Dosificadores</h2>
+                    <span>Volumétricos, a tornillo sinfín, balanza lineal o de múltiples cabezales, líquidos o el dosificador necesario acorde a su producto.</span>
+                </div>
 
-                                <div>
-                                    <h1 class="skills__title">Frontend Developer</h1>
-                                    <span class="skills__subtitle">1+ year's experience</span>
-                                </div>
+                <div class="nm__img-dosi">
+                    <img src="img/nm__balanza1.png" alt="Balanza 1">
+                    <img src="img/nm__tornillo.png" alt="Tornillo">
+                    <img src="img/nm__balanza2.png" alt="Balanza 2">
+                </div>
 
-                                <i class="fas fa-angle-down skills__arrow"></i>
-                            </div>
+                <!-- <div class="linea__divisiora"></div> -->
 
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">HTML5</h3>
-                                        <span class="skills__number">Advanced</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">CSS3</h3>
-                                        <span class="skills__number">Advanced</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__css"></span>
-                                    </div>
-                                </div>
+                <!--==================== ENFARDADORAS ==================-->
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__number">Intermediate</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__js"></span>
-                                    </div>
-                                </div>
+                <div class="nm__titulo3">
+                    <h2>Enfardadoras</h2>
+                    <span>Horizontales y Verticales.</span>
+                </div>
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Bootstrap</h3>
-                                        <span class="skills__number">Intermediate</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__bootstrap"></span>
-                                    </div>
-                                </div>
+                <div class="nm__img-enfar">
+                    <img src="img/nm__enfardadora.png" alt="Enfardadora 1">
+                    <img src="img/nm__enfardadora.png" alt="Enfardadora 2">
+                </div>
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">WordPress</h3>
-                                        <span class="skills__number">Basic</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__wordpress"></span>
-                                    </div>
-                                </div>
+                <!-- <div class="linea__divisiora"></div> -->
+
+
+                 <!--==================== ACCESORIOS ==================-->
+            
+                <div class="nm__titulo3">
+                    <h2>Accesorios</h2>
+                    <span>Elevadores, cinta de salida de paquetes, mesa rotativa, fechador por termoimpresión.</span>
+                </div>
+
+                <div class="nm__img-dosi">
+                    <img src="img/nm__accesorio.png" alt="Accesorio">
+                    <img src="img/nm__elevador.png" alt="Elevador">
+                    <img src="img/nm__mesa.png" alt="Mesa">
+                </div>
+
+            </section>
+
+            <!--==================== SECCIÓN 4: EMPAQUES ====================-->
+
+            <section class="empaques__section" id="empaques">
+                <div class="empaques__titulo">
+                    <h2>Empaques</h2>
+                    <span>Tipos de empaques que utilizan nuestras máquinas.</span>
+                </div>
+
+                <div class="nm__envases2">
+                    <div class="nm__almohada2">
+                        <img src="img/almohada.png" alt="Almohada">
+                        <span>Almohada</span>
+                    </div>
+                    <div class="nm__costuras2">
+                        <img src="img/fondoplano.png" alt="Costuras">
+                        <span>Fondo <br>Plano</span>
+                    </div>
+                    <div class="nm__doypack2">
+                        <img src="img/doypack.png" alt="Doypack">
+                        <span>Doypack</span>
+                    </div>
+                    <div class="nm__fytplana2">
+                        <img src="img/fondoytapaplana.png" alt="Fondo Tapa Plana">
+                        <span>Fondo y<br> Tapa plana</span>
+                    </div>
+                </div>
+
+                <p class="envases__p"><span>Materiales utilizables:</span> polietileno, polipropileno, laminados, papeles termosellables, papel sulfito, etc. 
+                </p>
+            </section>
+
+            <!--==================== SECCIÓN 5: CONTACTO ====================-->
+
+            <section class="contacto__section" id="contacto">
+                <div class="contacto__titulo">
+                    <h2>Contacto</h2>
+                    <!-- <span>Envíenos su consulta o comuníquese con nosotros.</span> -->
+                </div>
+
+                <div class="contacto__texto">
+                    <p>Solicitamos que se comuniquen con nosotros indicándonos sus necesidades de envasamiento:</p>
+                </div>
+                    <div class="contacto__texto__lista">
+                        <div class="lista1">
+                            <ul>
+                                <li>Tipo de producto a envasar.</li>
+                                <li>Características (formato, tamaño y peso).</li>
+                                <li>Tipo de envase requerido.</li>
+                            </ul>
+                        </div>
+
+                        <div class="lista2">
+                            <ul>
+                                <li>Tipo de material del envase.</li>
+                                <li>Espesor del material del envase.</li>
+                                <li>Peso y nivel de envasamiento requerido.</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="contacto__texto2">
+                    <p>A partir de estos datos nosotros desarrollaremos nuestra propuesta, para la cual seleccionaremos las máquinas y accesorios o complementos apropiados para su necesidad.</p>
+                    <p>Vale la pena que lo comprueben. Remítanos su consulta con el fin de tener un cambio de impresiones, que sin duda será provechoso para ambas partes.</p>
+                </div>
+
+                <div class="contacto__datos">
+                    <div class="contacto__info">
+                        <div class="contacto__info2">
+                            <i class="fas fa-phone-alt contacto__icono"></i>
+                            <div class="contacto__telefono">
+                                <h3 class="contacto__titulo2">Teléfonos</h3>
+                                <span class="contacto__subtitulo2">+54 11 4752-6444</span>
+                                <span class="contacto__subtitulo2">+54 11 4753-3662</span>
                             </div>
                         </div>
 
-                        <!--==================== SKILLS 2 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="fas fa-palette skills__icon"></i>
+                        <div class="contacto__info2">
+                            <i class="fas fa-envelope contacto__icono"></i>
 
-                                <div>
-                                    <h1 class="skills__title">Graphic Design</h1>
-                                    <span class="skills__subtitle">3+ years' experience</span>
-                                </div>
-
-                                <i class="fas fa-angle-down skills__arrow"></i>
+                            <div>
+                                <h3 class="contacto__titulo2">Email</h3>
+                                <span class="contacto__subtitulo2">arvako@arvako.com.ar</span>
                             </div>
+                        </div>
 
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Adobe Illustrator</h3>
-                                        <span class="skills__number">Advanced</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__illustrator"></span>
-                                    </div>
-                                </div>
+                        <div class="contacto__info2">
+                            <i class="fas fa-map-marker-alt contacto__icono"></i>
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Adobe Premiere Pro</h3>
-                                        <span class="skills__number">Advanced</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__illustrator"></span>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Adobe Photoshop</h3>
-                                        <span class="skills__number">Intermediate</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__photoshop"></span>
-                                    </div>
-                                </div>
+                            <div>
+                                <h3 class="contacto__titulo2">Dirección</h3>
+                                <span class="contacto__subtitulo2">Calle 72 (ex La Crujía) 5456
+                                    San Martín, Buenos Aires</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacto__info__mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.646491691923!2d-58.5602041!3d-34.5811027!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6d69c0b5f891a8c!2sArvako%20S.r.l.!5e0!3m2!1sen!2sar!4v1646602184177!5m2!1sen!2sar" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Adobe After Effects</h3>
-                                        <span class="skills__number">Intermediate</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__photoshop"></span>
-                                    </div>
+                <div class="contacto__form__titulo">
+                   <h2>Envíenos su consulta y le responderemos a la brevedad.</h2>
+                </div>
+
+                <div class="contacto__form">
+                    <form action="" method="POST" class="contacto__form2 ">
+                        <div class="contact__top"> 
+                            <div class="contact__inputs">
+                                <div class="contact__content">
+                                    <label for="" class="contact__label">Nombre</label>
+                                    <input type="text" class="contact__input" name="nombre" required> 
                                 </div>
+                                <div class="contact__content">
+                                    <label for="" class="contact__label">Apellido</label>
+                                    <input type="text" class="contact__input" name="apellido" required>
+                                </div>
+                            </div>
+                            <div class="contact__inputs">  
+                                <div class="contact__content">
+                                    <label for="" class="contact__label">Email</label>
+                                    <input type="email" class="contact__input" name="email" required>
+                                </div>
+                                <div class="contact__content">
+                                    <label for="" class="contact__label">Teléfono</label>
+                                    <input type="text" class="contact__input" name="telefono" required>
+                                </div>
+                            </div>
                             
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Adobe XD</h3>
-                                        <span class="skills__number">Intermediate</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__xd"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Figma</h3>
-                                        <span class="skills__number">Intermediate</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__figma"></span>
-                                    </div>
-                                </div>
-
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!--==================== FORMACIÓN ====================-->
-            <section class="qualification section" id="edu">
-                <h2 class="section__title">Qualifications</h2>
-                <span class="section__subtitle">Aptitudes and experience </span>
-
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex qualification__active" data-target="#education">
-                            <i class="fas fa-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-
-                        <div class="qualification__button button--flex" data-target="#work">
-                            <i class="fas fa-briefcase qualification__icon"></i>
-                            Work
-                        </div>
-                    </div>
-
-                    <div class="qualification__sections">
-                        <!--==================== FORMACIÓN - 1 ====================-->
-                        <div class="qualification__content qualification__active" data-content id="education">
-                            <!--==================== FORMACIÓN 1 ====================-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Software Engineer</h3>
-                                    <span class="qualification__subtitle">University of Buenos Aires</span>
-                                    <div class="qualification__calendar">
-                                        <i class="far fa-calendar"></i>
-                                        2021 - Present
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-
-                            <!--==================== FORMACIÓN 2 ====================-->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>    
-
-                                <div>
-                                    <h3 class="qualification__title">Web Developer | UI Designer</h3>
-                                    <span class="qualification__subtitle">Educación IT Institute</span>
-                                    <div class="qualification__calendar">
-                                        <i class="far fa-calendar"></i>
-                                        2018 - 2020
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--==================== FORMACIÓN 3 ====================-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Humanities and Social Science</h3>
-                                    <span class="qualification__subtitle">Carlos Steeb High School</span>
-                                    <div class="qualification__calendar">
-                                        <i class="far fa-calendar"></i>
-                                        2008 - 2012
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <!-- <span class="qualification__line"></span> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== FORMACIÓN - 2 ====================-->
-                        <div class="qualification__content" data-content id="work">
-                           <!--==================== FORMACIÓN 1 ====================-->
-                           <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Web/Graphic Designer</h3>
-                                <span class="qualification__subtitle">Colonia Express</span>
-                                <div class="qualification__calendar">
-                                    <i class="far fa-calendar"></i>
-                                    2021 - Present
-                                </div>
-                            </div>
-                        </div>
-                           
-                            <!--==================== FORMACIÓN 2 ====================-->
-                            <div class="qualification__data">
-
-                                <div>
-                                    <h3 class="qualification__title">Web Designer</h3>
-                                    <span class="qualification__subtitle">Freelance</span>
-                                    <div class="qualification__calendar">
-                                        <i class="far fa-calendar"></i>
-                                        2020 - 2021
-                                    </div>
-                                </div> 
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-
-                            </div>
-
-                            <!--==================== FORMACIÓN 3 ====================-->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Graphic Designer</h3>
-                                    <span class="qualification__subtitle">Tekno Homes S.A.</span>
-                                    <div class="qualification__calendar">
-                                        <i class="far fa-calendar"></i>
-                                        2017 - 2018
-                                    </div>
-                                </div>
-                            </div>
-                                   
-                            <!--==================== FORMACIÓN 4 ====================-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Graphic Designer</h3>
-                                    <span class="qualification__subtitle">Punto & Papel</span>
-                                    <div class="qualification__calendar">
-                                        <i class="far fa-calendar"></i>
-                                        2016 - 2017
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>          
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Recent projects</span>
-
-                <div class="portfolio__container container grid">
-                        <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid">
-                            <img src="img/portfolio1.png" alt="" class="portfolio__img arvako">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Web Page</h3>
-                                <p class="portfolio__description">Coming Soon - Under Construction!</p>
-                                
-                            </div>
-                            <div class="portfolio__btn">
-                                <a href="https://arvako.com.ar/" target="_blank" class="button button--flex button--small portfolio__button arvako">
-                                    See Website
-                                    <i class="fas fa-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio__content grid">
-                            <img src="img/portfolio3.jpg" alt="" class="portfolio__img mockup">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Mockup - Adobe XD</h3>
-                                <p class="portfolio__description">Mockup for a client. First steps before starting to work on the website.</p>
-                            </div>
-
-                            <div class="portfolio__btn">
-                                <a href="https://www.behance.net/gallery/131917477/Mockup-Arvako-SRL" target="_blank" class="button button--flex button--small portfolio__button mockup">
-                                    See Design
-                                    <i class="fas fa-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio__content grid">
-                            <img src="img/portfolio2.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Web Page</h3>
-                                <p class="portfolio__description">Website development for SCP Construcciones S.R.L., who wanted to show their work in an elegant and minimalist way.</p>
-                                
-                            </div>
-                            <div class="portfolio__btn">
-                                <a href="https://scpconstrucciones.com.ar" target="_blank" class="button button--flex button--small portfolio__button">
-                                    See Website
-                                    <i class="fas fa-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 4 ====================-->
-                        <div class="portfolio__content grid">
-                            <img src="img/portfolio4.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Parallax</h3>
-                                <p class="portfolio__description">Designed to become a portfolio or personal blog, this site was built usign CSS and JS to create a Parallax. </p>
-                                
-                            </div>
-
-                            <div class="portfolio__btn">
-                                <a href="parallax/parallax.html" target="_blank" class="button button--flex button--small portfolio__button">
-                                See Website
-                                <i class="fas fa-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                </div>
-            </section>
-
-            <!--==================== CONTACTO ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact me</h2>
-                <span class="section__subtitle"></span>
-
-                <div class="contact__container container grid">
-                    <div class="contact__info">
-                        <div class="contact__information">
-                            <i class="fas fa-phone-alt contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Phone</h3>
-                                <span class="contact__subtitle">+54 9 11 6365-4880</span>
-                            </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="fas fa-envelope contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">natalia.malvicino@gmail.com</span>
-                            </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="fas fa-map-marker-alt contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Location</h3>
-                                <span class="contact__subtitle">Buenos Aires, Argentina</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <form action="https://formspree.io/f/xeqvvygk" method="POST" class="contact__form grid">
-                        <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input" name="nombre" required> 
+                                <label for="" class="contact__label">Asunto</label>
+                                <input type="text" class="contact__input" name="asunto" required>
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input" name="email" required>
+                                <label for="" class="contact__label">Mensaje</label>
+                                <textarea name="mensaje" cols="0" rows="7" class="contact__input"  required></textarea>
                             </div>
+                            
                         </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Subject</label>
-                            <input type="text" class="contact__input" name="asunto" required>
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="mensaje" cols="0" rows="7" class="contact__input"  required></textarea>
-                        </div>
-
-                        <div class="btn__contact">
-                            <button type="submit" class="button button--flex">
+                        <div class="btn__contact2">
+                            <button type="submit" class="btn__contact">
                                 
-                                Send Message
+                                Enviar mensaje
                                 <i class="fas fa-comment-dots button__icon"></i>
                             </button>
                         </div>
                     </form>
                 </div>
             </section>
+
+
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Natalia Malvicino</h1>
-                        <span class="footer__subtitle">Web Developer</span>
+                
+            <div class="footer__contenedor">
+            
+                <div class="footer__contenedor2">
+
+                    <a href="#home"><img src="img/logo2.png" alt="Logo Arvako"></a>
+
+                    <div class="contacto__info">
+                        <div class="contacto__info2">
+                            <i class="fas fa-phone-alt contacto__icono2"></i>
+                            <div class="contacto__telefono">
+                                <h3 class="contacto__titulo2">Teléfonos</h3>
+                                <span class="contacto__subtitulo2">+54 11 4752-6444</span>
+                                <span class="contacto__subtitulo2">+54 11 4753-3662</span>
+                            </div>
+                        </div>
+
+                        <div class="contacto__info2">
+                            <i class="fas fa-envelope contacto__icono2"></i>
+
+                            <div>
+                                <h3 class="contacto__titulo2">Email</h3>
+                                <span class="contacto__subtitulo2">arvako@arvako.com.ar</span>
+                            </div>
+                        </div>
+
+                        <div class="contacto__info2">
+                            <i class="fas fa-map-marker-alt contacto__icono2"></i>
+
+                            <div>
+                                <h3 class="contacto__titulo2">Dirección</h3>
+                                <span class="contacto__subtitulo2">Calle 72 (ex La Crujía) 5456
+                                    San Martín, Buenos Aires</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#services" class="footer__link">Services</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="footer__link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contact me</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer__socials">
-                        <a href="https://www.linkedin.com/in/nataliamalvicino/" target="_blank" class="footer__social">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-
-                        <a href="https://dribbble.com/Aafterlife17" target="_blank" class="footer__social">
-                            <i class="fab fa-dribbble"></i>
-                        </a>
-
-                        <a href="https://github.com/Aafterlife17" target="_blank" class="footer__social">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
                 </div>
-                <p class="footer__copy">&#169; Natalia Malvicino 2021 | All rights Reserved.</p>
-
+                
+                <p class="footer__copy">&#169; Arvako S.R.L. 2022 | Todos los derechos reservados.</p>
+    
             </div>
+            
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
+        
         <a href="#" class="scrollup" id="scroll-up">
             <i class="fas fa-arrow-up scrollup__icon"></i>
         </a>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="js/swiper-bundle.min.js"></script>
-
-        <!--==================== JS ====================-->
-        <script src="js/script.js"></script>
+        <!--==================== MAIN JS ====================-->
+        <script src="/js/main.js"></script>
     </body>
 </html>
