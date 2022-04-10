@@ -1134,8 +1134,132 @@ header {
         background: url("/img/fondo-665.jpg") no-repeat fixed 100% rgba(0, 0, 0, 0.3) ;
         background-size: cover;
         background-blend-mode: darken;
+        
+    }
+}
+
+@media screen and (max-width: 450px){
+    .principal{
+        background: url("/img/fondo-450.jpg") no-repeat fixed 100% rgba(0, 0, 0, 0.3) ;
+        padding: 8rem 1rem 8rem 0;        
     }
 
-    
+    .principal__titles{
+        margin-left: 2rem;
+    }
+
+    .institucional__section{
+        padding: 5rem 0 5rem 0;
+    }
+
+    .institucional{
+        margin: 0 1.2rem;
+    }
+
+    .institucional__img img{
+        width: 100%;
+    }
+
+    .nuestras__maquinas{
+        padding: 5rem 0 5rem 0;
+    }
+
+    .nm__titulo span{
+        margin: 2rem 1.2rem 0;
+        text-align: center;
+    }
+
+    .nm__texto-confecc{
+        font-size: 1.1rem;
+    }
+
+    .nm__envases{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nm__img-confecc{
+        width: 100%;
+    }
+
+    .nm__costuras{
+        margin-left: 2rem;
+        width: 55%;
+    }
+
+
+    .nm__fytplana{
+        width: 100%;
+    }
+
+    .nm__img-enfar{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    .nm__img-enfar img{
+        width: 60%;
+    }
+
+    .empaques__titulo span{
+        text-align: center;
+    }
+
+    .nm__costuras2{
+        margin: 1.5rem;
+    }
+
+    .nm__almohada2, .nm__costuras2, .nm__doypack2, .nm__fytplana2{
+        width: 80%;
+        text-align: center;
+    }
+
+    .nm__costuras2{
+        width: 50%;
+    }
+
+    .nm__envases2{
+        grid-template-columns: repeat(2, 160px);
+        gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
+       margin: 2rem 1rem 2rem 3.5rem;
+    }
+
+    .envases__p{
+        text-align: left;
+        margin-right: 1rem;
+    }
+
+    .envases__p span{
+        margin-right: 10px;
+    }
+
+    .contacto__section{
+        padding: 3rem 0 5rem 0;
+    }
+
+    .contacto__texto, .contacto__texto2{
+        font-size: 1.1rem;
+    }
+
+    .contacto__info{
+
+        margin: 0 3rem;
+        font-size: 1.1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacto__form__titulo{
+        margin: 0 2rem;
+    }
+
+    .contact__top{
+        margin-left: 2rem;
+    }
     
 }
