@@ -1202,10 +1202,9 @@ header {
         gap: 2rem;
         width: 100%;
     }
-    .nm__img-enfar img{
-        width: 100%;
+    .nm__img-enfar .horizontal{
+        width: 90%;
     }
-
     .empaques__titulo span{
         text-align: center;
         margin: 2rem 2rem 0 2rem;
