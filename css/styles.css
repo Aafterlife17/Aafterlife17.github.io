@@ -1203,6 +1203,9 @@ header {
         width: 100%;
     }
     .nm__img-enfar .horizontal{
+        width: 50%;
+    }
+    .nm__img-enfar .vertical{
         width: 90%;
     }
     .empaques__titulo span{
